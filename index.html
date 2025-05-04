@@ -5,56 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EcoShop</title>
   <link rel="shortcut icon" href="./assets/img/shortcut.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 <body>
-  <header>
-    <div class="logo">LOGO</div>
-    <nav>
-      <ul>
-        <li><a href="#">Categorias</a></li>
-        <li><a href="#">Pagamento</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Ajuda</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Lorem Ipsum</h1>
-      <p>dolor sit amet</p>
-      <div class="search-box">
-        <input type="text" placeholder="Search" />
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="./assets/img/Logo.svg" alt="">
       </div>
-    </div>
-    <div class="hero-image"></div>
-  </section>
+      <nav>
+        <ul>
+          <li><a href="#">Categorias</a></li>
+          <li><a href="#">Pagamento</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Ajuda</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section class="categories">
-    <div class="section-header">
-      <h2>Categorias</h2>
-      <a href="#">Ver todas</a>
-    </div>
-    <div class="items">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-  </section>
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Lorem Ipsum</h1>
+          <p>dolor sit amet</p>
+          <div class="search-box">
+            <input type="text" placeholder="Search">
+          </div>
+        </div>
+        <div class="hero-image"></div>
+      </section>
 
-  <section class="popular">
-    <h2>Populares</h2>
-    <div class="items">
-      <div class="item large"></div>
-      <div class="item large"></div>
-      <div class="item large"></div>
-    </div>
-  </section>
+      <section class="categorias">
+        <div class="section-header">
+          <h2>Categorias</h2>
+          <a href="#">Ver todas</a>
+        </div>
+        <div class="grid categorias-grid">
+          <div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div>
+        </div>
+      </section>
+
+      <section class="populares">
+        <h2>Populares</h2>
+        <div class="grid populares-grid">
+          <div></div><div></div><div></div><div></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="logo">LOGO</div>
+    <ul class="footer-links">
+      <li><a href="#">Ajuda</a></li>
+      <li><a href="#">Categorias</a></li>
+      <li><a href="#">Pagamento</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #212529;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.container {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+header .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #00a57e;
+}
+header img {
+  width: 16rem;
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+header nav ul a {
+  text-decoration: none;
+  color: #00a57e;
+}
+header nav ul a:hover {
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+main .hero {
+  background-color: #009c75;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 5px;
+  align-items: center;
+  padding-inline: 3rem;
+  padding-block: 5rem;
+}
+main .hero .hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: -1rem;
+}
+main .hero .hero-text p {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+main .hero .hero-text .search-box input {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 20rem;
+  width: 250px;
+  font-size: 1rem;
+}
+main .hero .hero-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+}
+main .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 1rem;
+}
+main .section-header h2 {
+  font-size: 1rem;
+  color: #b3dcd2;
+}
+main .section-header a {
+  font-size: 0.8rem;
+  color: #00a57e;
+  text-decoration: none;
+}
+main .grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+main .grid div {
+  background-color: #00a57e;
+  border-radius: 4px;
+}
+main .categorias-grid div {
+  width: 80px;
+  height: 100px;
+}
+main .populares h2 {
+  font-size: 1rem;
+  margin: 2rem 0 1rem;
+  color: #b3dcd2;
+}
+main .populares-grid div {
+  width: 160px;
+  height: 120px;
+}
+
+footer {
+  background-color: #009c75;
+  color: #1c1d21;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  margin-left: calc(-1 * var(--body-margin));
+  margin-right: calc(-1 * var(--body-margin));
+}
+footer .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+footer .footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .footer-links li a {
+  color: #1c1d21;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
