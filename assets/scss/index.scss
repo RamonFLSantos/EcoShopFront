@@ -1,0 +1,246 @@
+$primary: #009975;
+$dark: #212529;
+$light: #ffffff;
+$gray: #dcdcdc;
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: $dark;
+  color: $light;
+}
+
+html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+
+.principal-container {
+  margin-inline: 5rem;
+}
+
+.principal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-inline: 5rem;
+  background-color: $dark;
+
+  .principal-logo {
+    img {
+      width: 17rem;
+    }
+  }
+
+  .principal-nav a {
+    color: $primary;
+    margin-left: 1.5rem;
+    text-decoration: none;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.principal-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary;
+  padding-left: 4rem;
+  border-radius: .5rem;
+
+  .principal-hero-text {
+    max-width: 75%;
+
+    h1 {
+      font-weight: 100;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .principal-input-wrapper {
+        position: relative;
+        display: inline-block;
+
+        .material-symbols-outlined {
+          position: absolute;
+          left: 1rem;
+          top: 25%;
+          transform: translateY(-50%);
+          color: #727272;
+          pointer-events: none;
+        }
+
+        input {
+          padding-block: 1rem;
+          padding-right: 3rem;
+          padding-left: 3rem;
+          border-radius: 5rem;
+          border: none;
+          font-size: 1rem;
+          margin-bottom: 3rem;
+        }
+      }
+  }
+
+  .principal-hero-image {
+    padding-top: 4rem;
+    padding-right: 4rem;
+    align-self: flex-end;
+
+    img {
+      display: block;
+      width: 27rem;
+    }
+  }
+}
+
+.principal-categorias {
+  margin-top: 3rem;
+
+  .principal-categorias-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    h2 {
+      font-size: 1.2rem;
+      color: $primary;
+    }
+
+    a {
+      font-weight: 400;
+      text-decoration: none;
+      color: #009975;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .principal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    text-align: center;
+
+    .principal-categoria {
+      background-color: #009975;
+      color: white;
+      border-radius: .3rem;
+      padding-block: 1.5rem;
+      padding-inline: 1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #018c5e;
+      }
+
+      .material-symbols-outlined {
+        font-size: 3.5rem;
+    }
+  }
+}
+}
+.principal-populares {
+  margin-block: 3rem;
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: $primary;
+  }
+
+  .principal-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-right: -1rem;
+
+    .principal-produto {
+      background-color: $light;
+      color: $dark;
+      border-radius: .5rem;
+      padding: .7rem;
+      width: calc(25% - 1rem);
+      text-align: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: .5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #009975;
+
+        .material-symbols-outlined {
+          color: #f4f5f7;
+          background-color: #009975;
+          padding: .3rem;
+          border-radius: .2rem;
+        }
+      }
+    }
+  }
+}
+
+.principal-footer {
+  margin-top: 6rem;
+  background-color: $primary;
+  color: $light;
+  padding-inline: 5rem;
+  padding-block: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .principal-logo-footer img {
+    width: 17rem;
+  }
+
+  .principal-footer-links {
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+      gap: 1rem;
+
+    a {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: $light;
+      margin-left: 1.5rem;
+      text-decoration: none;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}

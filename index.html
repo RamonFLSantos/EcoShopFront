@@ -10,87 +10,141 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="./main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <img src="./assets/img/Logo.svg" alt="">
+  <header class="principal-header">
+      <div class="principal-logo">
+        <img src="./assets/img/logo.svg" alt="">
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Categorias</a></li>
-          <li><a href="#">Pagamento</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Ajuda</a></li>
-        </ul>
+      <nav class="principal-nav">
+        <a href="#">Categorias</a>
+        <a href="#">Pagamento</a>
+        <a href="#">Contato</a>
+        <a href="#">Ajuda</a>
       </nav>
-    </header>
+  </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-text">
-          <h1>Lorem Ipsum</h1>
-          <p>dolor sit amet</p>
-          <div class="search-box">
-            <input type="text" placeholder="Search">
-          </div>
+  <div class="principal-container">
+    <section class="principal-hero">
+      <div class="principal-hero-text">
+        <h1><span>Produtos Sustentáveis</span><br>feitos para você</h1>
+        <div class="principal-input-wrapper">
+          <span class="material-symbols-outlined">search</span>
+            <input type="text" placeholder="Pesquisar" />
         </div>
-        <div class="hero-image"></div>
-      </section>
+      </div>
+      <div class="principal-hero-image">
+        <img src="./assets/img/header-image.png" alt="Ilustração Sustentável" />
+      </div>
+    </section>
 
-      <section class="categorias">
-        <div class="section-header">
-          <h2>Categorias</h2>
-          <a href="#">Ver todas</a>
+    <section class="principal-categorias">
+      <div class="principal-categorias-cabecalho">
+        <h2>Categorias</h2>
+        <a href="">Ver todas</a>
+      </div>
+      <div class="principal-grid">
+        <div class="principal-categoria">
+          <span class="material-symbols-outlined">shower</span>
+          Higiene Pessoal
         </div>
-        <div class="grid categorias-grid">
-          <div class="categoria">
-            <span class="material-symbols-outlined">forest</span>
-          </div>
-          <div class="categoria">
-            <span class="material-symbols-outlined">eco</span>
-          </div>
-          <div class="categoria">
-            <span class="material-symbols-outlined">egg</span>
-          </div>
-          <div class="categoria">
-            <span class="material-symbols-outlined">lightbulb</span>
-          </div>
-          <div class="categoria">
-            <span class="material-symbols-outlined">sunny</span>
-          </div>
-          <div class="categoria">
-            <span class="material-symbols-outlined">description</span>
-          </div>
-          <div class="categoria">
-            <span class="material-symbols-outlined">checkroom</span>
-          </div>
+        <div class="principal-categoria">
+          <span class="material-symbols-outlined">menu_book</span>
+          Livros e Revistas
         </div>
-      </section>
+        <div class="principal-categoria">
+          <span class="material-symbols-outlined">checkroom</span>
+          Roupas Sustentáveis
+        </div>
+        <div class="principal-categoria">
+          <span class="material-symbols-outlined">home</span>
+          Itens para <br> Casa
+        </div>
+        <div class="principal-categoria">
+          <span class="material-symbols-outlined">electric_bike</span>
+          Mobilidade Ecológica
+        </div>
+        <div class="principal-categoria">
+          <span class="material-symbols-outlined">yard</span>
+          Jardinagem <br> e Cultivo
+        </div>
+        <div class="principal-categoria">
+          <span class="material-symbols-outlined">pets</span>
+          Itens para <br> Pets
+        </div>
+        <div class="principal-categoria">
+          <span class="material-symbols-outlined">camping</span>
+          Camping e Aventura
+        </div>
+        <div class="principal-categoria">
+          <span class="material-symbols-outlined">draw</span>
+          Papelaria Ecológica
+        </div>
+      </div>
+    </section>
 
-      <section class="populares">
-        <h2>Populares</h2>
-        <div class="grid populares-grid">
-          <div></div><div></div><div></div><div></div>
+    <section class="principal-populares">
+      <h2>Populares</h2>
+      <div class="principal-produtos">
+        <div class="principal-produto">
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/img/copoBio.jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="card-title">Copo Biodegradável</span>
+              <a href=""><span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
+        <div class="principal-produto">
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/img/camisa.jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="card-title">Camiseta Eco</span>
+              <a href=""><span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="principal-produto">
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/img/planta1.jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="card-title">Bonsai Pequeno</span>
+              <a href=""><span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="principal-produto">
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/img/utensiliosMad.jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="card-title">Utensílios Reciclados</span>
+              <a href=""><span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </div>
+        </div>
+    </section>
   </div>
-
-  <footer>
-    <div class="logo">
+  <footer class="principal-footer">
+    <div class="principal-logo-footer">
       <img src="./assets/img/logoFooter.png" alt="">
     </div>
-    <ul class="footer-links">
-      <li><a href="#">Ajuda</a></li>
-      <li><a href="#">Categorias</a></li>
-      <li><a href="#">Pagamento</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
+    <div class="principal-footer-links">
+      <a href="#">Ajuda</a>
+      <a href="#">Categorias</a>
+      <a href="#">Pagamento</a>
+      <a href="#">Contato</a>
+    </div>
   </footer>
 </body>
 </html>
