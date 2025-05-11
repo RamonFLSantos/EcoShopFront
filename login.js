@@ -1,20 +1,29 @@
-document.getElementById("loginForm").addEventListener("submit", async function (e) {
-  e.preventDefault()
+export function initLogin() {
+  const form = document.querySelector("form");
 
-  const email = document.getElementById("email").value
-  const password = document.getElementById("senha").value
+  if (form) {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-  const response = await fetch("http://localhost:8080/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ email, password })
-  })
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
 
-  if (response.status === 200) {
-    window.location.href = "index.html"
-  } else {
-    alert("Email ou senha inválidos.")
+      try {
+        const response = await fetch(`http://localhost:8080/login?email=${encodeURIComponent(email)}&password=${encodeURIComponent(senha)}`, {
+          method: "GET"
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          localStorage.setItem("token", data.token);
+          window.location.href = "index.html";
+        } else {
+          alert("Usuário não cadastrado");
+        }
+      } catch (error) {
+        console.error("Erro ao fazer login:", error);
+        alert("Erro na conexão com o servidor");
+      }
+    });
   }
-})
+}
