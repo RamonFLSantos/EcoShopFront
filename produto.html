@@ -10,9 +10,63 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  
+  <div class="produtos-container">
+    <header class="produtos-header">
+    <img src="./assets/img/logo.svg" alt="EcoShop Logo" class="produtos-logo" />
+    <div class="produtos-search">
+      <span class="material-symbols-outlined">search</span>
+      <input type="text" placeholder="Pesquisar" />
+    </div>
+  </header>
+
+  <main class="produtos-detalhes">
+    <section class="produtos-main">
+      <img src="./assets/img/copoBio.jpg" alt="Copo Biodegradável" class="produtos-imagem-principal" />
+
+      <div class="produtos-info">
+        <h1 class="produtos-titulo">Copo Biodegradável</h1>
+        <p class="produtos-preco">R$25,00</p>
+        <p class="produtos-descricao">
+          Copo biodegradável feito de materiais naturais, ideal para bebidas quentes ou frias. Sustentável, resistente e livre de plástico, contribui para a preservação do meio ambiente. Decomposição rápida após o descarte. Perfeito para festas, eventos ou uso diário. Escolha consciente para quem se preocupa com o planeta e busca soluções ecológicas. Além de funcional, seu design é moderno.
+        </p>
+        <button class="produtos-botao">ADICIONAR AO CARRINHO</button>
+      </div>
+    </section>
+
+    <div class="produtos-thumbs">
+      <img src="./assets/img/copo2.png" alt="" />
+      <img src="./assets/img/copo3.png" alt="" />
+      <img src="./assets/img/copo4.png" alt="" />
+      <img src="./assets/img/copo5.png" alt="" />
+    </div>
+
+    <section class="produtos-similares">
+      <h2 class="produtos-subtitulo">Similares</h2>
+      <div class="produtos-lista-similares">
+        <img src="./assets/img/ecobag.png" alt="" />
+        <img src="./assets/img/garradaPapel.png" alt="" />
+        <img src="./assets/img/garrafMetal.png" alt="" />
+        <img src="./assets/img/utenMad.png" alt="" />
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <footer class="produtos-footer">
+    <div class="produtos-footer-logo">
+      <img src="./assets/img/logoFooter.png" alt="">
+    </div>
+    <ul class="produtos-footer-links">
+      <li>Ajuda</li>
+      <li>Categorias</li>
+      <li>Pagamento</li>
+      <li>Contato</li>
+    </ul>
+  </footer>
 </body>
 </html>
