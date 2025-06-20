@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch scss:css"
+    "sass": "sass --watch scss:css",
+    "dev": "live-server --port=3000"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/RamonFLSantos/EcoShopFront#readme",
   "devDependencies": {
+    "live-server": "^1.2.2",
     "sass": "^1.86.3"
   }
 }

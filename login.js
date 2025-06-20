@@ -18,7 +18,7 @@ export function initLogin() {
           localStorage.setItem("token", data.token);
           window.location.href = "index.html";
         } else {
-          alert("Usuário não cadastrado");
+          alert("Email ou senha incorretos");
         }
       } catch (error) {
         console.error("Erro ao fazer login:", error);

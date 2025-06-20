@@ -1,0 +1,94 @@
+.inicio-body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("../img/background-inicio.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #f4f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio-container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.inicio-logo {
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.inicio-subtitle {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+  font-weight: 200;
+  margin-bottom: 3rem;
+}
+
+.inicio-login-text {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.inicio-cadastro {
+  text-decoration: none;
+  color: #059669;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.inicio-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .inicio-btn {
+    width: 13rem;
+    padding-block: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+  .inicio-usuario {
+    background-color: #059669;
+    color: #f4f5f7;
+    border: 2px solid #059669;
+
+    &:hover {
+      background-color: #047e58;
+      border: 2px solid #047e58;
+    }
+  }
+
+  .inicio-administrador {
+    background-color: transparent;
+    color: #059669;
+    border: 2px solid #059669;
+
+    &:hover {
+      background-color: #f4f5f7;
+      border: 2px solid #f4f5f7;
+      color: #059669;
+    }
+  }
+}

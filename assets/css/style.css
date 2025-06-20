@@ -564,6 +564,336 @@ body {
   font-weight: bold;
 }
 
+.categoria-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-inline: 5rem;
+}
+
+.categoria-container {
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #212529;
+  color: #f4f5f7;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 2rem;
+}
+
+.categoria-filtro {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+}
+.categoria-filtro h2 {
+  margin-left: 0rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+.categoria-filtro ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+.categoria-filtro ul li {
+  margin-top: 0.75rem;
+}
+.categoria-filtro ul li label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+.categoria-filtro ul li input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.1rem solid #f4f5f7;
+  border-radius: 0.2rem;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease;
+}
+.categoria-filtro ul li input[type=checkbox]:checked {
+  background-color: #009975;
+  border-color: #009975;
+}
+.categoria-filtro ul li input[type=checkbox]:checked::after {
+  content: "x";
+  color: #f4f5f7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.categoria-conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.categoria-grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.categoria-produto {
+  margin-bottom: 1.25rem;
+}
+.categoria-produto img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.2rem;
+  margin-bottom: 0.15rem;
+}
+.categoria-produto .categoria-produto-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.categoria-produto .categoria-produto-text .categoria-produto-nome {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.25rem;
+  color: #f4f5f7;
+}
+.categoria-produto .categoria-produto-text .categoria-produto-preco {
+  font-weight: bold;
+  color: #f4f5f7;
+}
+
+.categoria-footer {
+  margin-top: 6rem;
+  background-color: #009975;
+  color: #f4f5f7;
+  padding-inline: 5rem;
+  padding-block: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.categoria-footer .categoria-logo-footer img {
+  width: 17rem;
+}
+.categoria-footer .categoria-footer-links {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 1rem;
+}
+.categoria-footer .categoria-footer-links a {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #f4f5f7;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+.categoria-footer .categoria-footer-links a:hover {
+  font-weight: bold;
+}
+
+.inicio-body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("../img/background-inicio.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #f4f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio-container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.inicio-logo {
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.inicio-subtitle {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+  font-weight: 200;
+  margin-bottom: 3rem;
+}
+
+.inicio-login-text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.inicio-cadastro {
+  text-decoration: none;
+  color: #059669;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.1rem;
+}
+.inicio-cadastro:hover {
+  text-decoration: underline;
+}
+
+.inicio-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.inicio-buttons .inicio-btn {
+  width: 13rem;
+  padding-block: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.inicio-buttons .inicio-usuario {
+  background-color: #059669;
+  color: #f4f5f7;
+  border: 2px solid #059669;
+}
+.inicio-buttons .inicio-usuario:hover {
+  background-color: #047e58;
+  border: 2px solid #047e58;
+}
+.inicio-buttons .inicio-administrador {
+  background-color: transparent;
+  color: #059669;
+  border: 2px solid #059669;
+}
+.inicio-buttons .inicio-administrador:hover {
+  background-color: #f4f5f7;
+  border: 2px solid #f4f5f7;
+  color: #059669;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.administrador-page {
+  height: 100%;
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #212529;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.administrador-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.administrador-left-panel {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #212529;
+  margin-left: 5rem;
+}
+.administrador-left-panel .administrador-logo img {
+  margin-top: -4rem;
+  width: 7rem;
+}
+.administrador-left-panel h1 {
+  font-family: "Afacad", sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #00a97f;
+  margin-top: -0.5rem;
+  margin-left: -0.1rem;
+  margin-bottom: 0rem;
+}
+.administrador-left-panel p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.administrador-left-panel form {
+  display: flex;
+  flex-direction: column;
+}
+.administrador-left-panel form label {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.administrador-left-panel form input {
+  font-family: "Noto Sans", sans-serif;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #212529;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  margin-right: 4rem;
+}
+.administrador-left-panel form button {
+  padding: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  background-color: #00a97f;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+  margin-right: 4rem;
+}
+.administrador-left-panel form button:hover {
+  background-color: #007659;
+}
+
+.administrador-right-panel {
+  flex: 1;
+  background: url("/assets/img/image-login.png") center center/cover no-repeat;
+}
+
 * {
   margin: 0;
   padding: 0;
