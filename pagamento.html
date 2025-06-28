@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoShop | Pagamento</title>
+  <link rel="shortcut icon" href="./assets/img/shortcut.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Afacad&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body class="pag-page">
+  <div class="pag-container">
+    <header>
+      <img src="./assets/img/logo.svg" alt="EcoShop" />
+    </header>
+    <main>
+      <h2 class="pag-titulo">Informações pessoais</h2>
+      <form class="pag-form">
+        <label for="pag-nome">Nome</label>
+        <input type="text" id="pag-nome" placeholder="Digite seu nome" />
+
+        <label for="pag-cartao">Número do Cartão</label>
+        <input type="text" id="pag-cartao" placeholder="**** **** **** ****" />
+
+        <div class="pag-dupla">
+          <div>
+            <label for="pag-cvv">CVV</label>
+            <input type="text" id="pag-cvv" placeholder="123" />
+          </div>
+          <div>
+            <label for="pag-parcelas">Parcelas</label>
+            <input type="text" id="pag-parcelas" placeholder="2x" />
+          </div>
+        </div>
+
+        <label for="pag-email">Email</label>
+        <input type="email" id="pag-email" placeholder="email@exemplo.com" />
+
+        <label for="pag-cpf">CPF</label>
+        <input type="text" id="pag-cpf" placeholder="000.000.000-00" />
+
+        <label for="pag-nascimento">Data de Nascimento</label>
+        <input type="date" id="pag-nascimento" />
+
+        <button type="submit" class="pag-botao">Avançar</button>
+      </form>
+    </main>
+  </div>
+  <footer class="pag-footer">
+    <img src="./assets/img/logoFooter.png" alt="EcoShop" />
+  </footer>
+</body>
+</html>

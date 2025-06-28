@@ -1,0 +1,67 @@
+$background: #212529;
+$white: #f4f5f7;
+$green: #009975;
+
+body.edt-page {
+  background-color: $background;
+  font-family: 'Noto Sans', sans-serif;
+  color: $white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+
+.edt-container {
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: 15rem;
+}
+
+header img {
+  width: 17rem;
+  margin-bottom: 1rem;
+}
+
+.edt-titulo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.edt-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid $white;
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+
+  .edit-card-end {
+    span {
+      margin-left: 2rem;
+    }
+  }
+
+  span {
+    color: $white;
+  }
+}
+
+.edt-footer {
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 3rem;
+
+  img {
+    width: 17rem;
+    margin: 3rem 0 3rem 15rem;
+    object-fit: contain;
+  }
+}

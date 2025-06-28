@@ -1,0 +1,94 @@
+$background: #212529;
+$white: #f4f5f7;
+$green: #009975;
+
+body.nf-page {
+  background-color: $background;
+  font-family: 'Noto Sans', sans-serif;
+  color: $white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nf-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nf-codigo {
+  font-family: 'Afacad', sans-serif;
+  font-size: 20rem;
+  color: $green;
+  margin-bottom: -3rem;
+}
+
+.nf-titulo {
+  font-family: 'Afacad', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: .5rem;
+  color: $green;
+}
+
+.nf-msg {
+  font-size: 1.1rem;
+  font-weight: 200;
+  max-width: 40rem;
+  margin-bottom: 2rem;
+  color: $white;
+}
+
+.nf-botoes {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nf-btn {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nf-btn-primario {
+  background-color: $green;
+  color: $white;
+  border: none;
+
+  &:hover {
+    background-color: darken($green, 10%);
+  }
+}
+
+.nf-btn-secundario {
+  border: 2px solid $green;
+  color: $green;
+
+  &:hover {
+    background-color: $white;
+    border: 2px solid $white;
+    color: $green;
+  }
+}
+
+.nf-footer {
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4rem;
+
+  img {
+    width: 17rem;
+    margin: 3rem 0 3rem 15rem;
+    object-fit: contain;
+  }
+}

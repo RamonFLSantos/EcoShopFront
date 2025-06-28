@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoShop | Atualizar Produto</title>
+  <link rel="shortcut icon" href="./assets/img/shortcut.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="atl-produto-page">
+  <div class="atl-produto-container">
+    <header>
+      <img src="./assets/img/logo.svg" alt="EcoShop Logo">
+    </header>
+    <main>
+      <h2 class="atl-produto-titulo">Atualizar Produto</h2>
+      <form class="atl-produto-form">
+        <label for="atl-produto-nome">Nome</label>
+        <input type="text" id="atl-produto-nome" placeholder="Digite o nome do produto">
+
+        <label for="atl-produto-descricao">Descrição</label>
+        <textarea id="atl-produto-descricao" rows="4" placeholder="Digite uma descrição"></textarea>
+
+        <label for="atl-preco">Preço</label>
+        <div class="atl-wrapper">
+          <span class="atl-prefix">R$</span>
+          <input type="text" id="atl-preco">
+        </div>
+
+        <label for="atl-produto-imagem">Adicionar Imagem (Insira o link)</label>
+        <input type="text" id="atl-produto-imagem" placeholder="Link da imagem">
+
+        <button type="submit" class="atl-produto-botao concluir">Concluir</button>
+      </form>
+    </main>
+  </div>
+  <footer class="atl-produto-footer">
+    <img src="./assets/img/logoFooter.png" alt="EcoShop">
+  </footer>
+</body>
+</html>

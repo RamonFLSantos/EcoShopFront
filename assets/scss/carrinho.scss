@@ -1,0 +1,106 @@
+$carrinho-background: #212529;
+$carrinho-white: #f4f5f7;
+$carrinho-green: #009975;
+
+body.carrinho-page {
+  background-color: $carrinho-background;
+  font-family: 'Noto Sans', sans-serif;
+  color: $carrinho-white;
+  min-height: 100vh;
+}
+
+.carrinho-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-left: 15rem;
+
+  img {
+    width: 17rem;
+    margin-top: 4rem;
+  }
+}
+
+.carrinho-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-inline: 15rem;
+
+  .carrinho-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 10rem;
+      height: 10rem;
+      object-fit: cover;
+      border-radius: 0.2rem;
+    }
+
+    .carrinho-nome {
+      flex: 1;
+      margin-left: 2rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    .carrinho-preco {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  }
+
+  .carrinho-linha {
+    border: 1.275px solid $carrinho-white;
+    margin: 2rem 0 1rem;
+  }
+
+  .carrinho-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .carrinho-finalizar {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      background-color: $carrinho-green;
+      color: $carrinho-white;
+      border: none;
+      padding: 1rem 4rem;
+      border-radius: 0.4rem;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($carrinho-green, 10%);
+      }
+    }
+  }
+}
+
+.carrinho-footer {
+  width: 100%;
+  background-color: $carrinho-green;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4rem;
+
+  img {
+    width: 17rem;
+    margin-block: 3rem;
+    margin-left: 15rem;
+    object-fit: contain;
+  }
+}
+

@@ -64,10 +64,6 @@ header img {
     color: $white;
     font-size: .95rem;
     margin-bottom: 2rem;
-
-    &::placeholder {
-      color: lighten($white, 20%);
-    }
   }
 }
 

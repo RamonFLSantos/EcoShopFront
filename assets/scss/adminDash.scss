@@ -1,0 +1,100 @@
+$background: #212529;
+$white: #f4f5f7;
+$green: #009975;
+
+body.adm-page {
+  background-color: $background;
+  font-family: 'Noto Sans', sans-serif;
+  color: $white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.adm-header {
+  margin-top: 4rem;
+  margin-left: 15rem;
+
+  img {
+    width: 17rem;
+  }
+}
+
+.adm-container {
+  padding-inline: 15rem;
+  padding-bottom: 4rem;
+
+  .adm-titulo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .adm-cards {
+    display: flex;
+    gap: 2rem;
+
+    .adm-card {
+      border: 2px solid lighten($background, 30%);
+      border-radius: 0.6rem;
+      padding: 4rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .adm-card-titulo {
+        font-weight: 700;
+        font-size: 1.275rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .adm-card-texto {
+        font-weight: 100;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .adm-card-botao {
+        background-color: $green;
+        color: $white;
+        border: none;
+        padding: 0.9rem 2.8rem;
+        border-radius: 0.2rem;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darken($green, 10%);
+        }
+      }
+
+      .material-symbols-outlined {
+        color: $white;
+        pointer-events: none;
+        margin-bottom: 1rem;
+        font-size: 7rem;
+      }
+    }
+  }
+}
+
+.adm-footer {
+  width: 100%;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 3rem;
+
+  img {
+    width: 17rem;
+    margin-block: 3rem;
+    object-fit: contain;
+    margin-left: 15rem;
+  }
+}

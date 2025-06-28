@@ -1,0 +1,75 @@
+$background: #212529;
+$white: #f4f5f7;
+$green: #009975;
+
+body.fim-page {
+  background-color: $background;
+  font-family: 'Noto Sans', sans-serif;
+  color: $white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fim-header {
+  margin-top: 4rem;
+  margin-inline: 15rem;
+
+  img {
+    width: 17rem;
+  }
+}
+
+.fim-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.material-symbols-outlined {
+  font-size: 4.5rem;
+}
+
+.fim-icon {
+  background-color: $green;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.fim-titulo {
+  font-family: 'Afacad', sans-serif;
+  font-size: 2.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.fim-msg {
+  font-size: 1.25rem;
+  font-weight: lighter;
+  margin-bottom: 3rem;
+
+  .fim-destaque {
+    color: $green;
+    font-weight: 600;
+  }
+}
+
+.fim-footer {
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  img {
+    width: 17rem;
+    margin: 3rem 0 3rem 15rem;
+    object-fit: contain;
+  }
+}

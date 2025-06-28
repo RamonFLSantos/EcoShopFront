@@ -1,0 +1,118 @@
+$background: #212529;
+$white: #f4f5f7;
+$green: #009975;
+
+body.atl-produto-page {
+  background-color: $background;
+  font-family: 'Noto Sans', sans-serif;
+  color: $white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 4rem;
+}
+
+.atl-produto-container {
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: 15rem;
+}
+
+header img {
+  width: 17rem;
+  margin-bottom: 1rem;
+}
+
+.atl-produto-titulo {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.atl-produto-form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: .75rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  input,
+  textarea {
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid $white;
+    border-radius: 0.4rem;
+    padding: .75rem;
+    color: $white;
+    font-size: .95rem;
+    margin-bottom: 2rem;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  #atl-preco {
+    width: 10%;
+  }
+
+  .atl-wrapper {
+    position: relative;
+    width: 100%;
+
+    input {
+      width: 100%;
+      padding-left: 2rem;
+    }
+
+    .atl-prefix {
+      position: absolute;
+      top: 30%;
+      left: 0.75rem;
+      transform: translateY(-50%);
+      color: lighten($white, 20%);
+      font-size: .95rem;
+      pointer-events: none;
+    }
+  }
+}
+
+.atl-produto-botao {
+  margin-right: 0;
+  align-self: flex-end;
+  background-color: $green;
+  color: $white;
+  border: none;
+  padding: 1.2rem 5rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  font-size: .95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($green, 10%);
+  }
+}
+
+.atl-produto-footer {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  img {
+    width: 17rem;
+    margin-block: 3rem;
+    object-fit: contain;
+    margin-left: 15rem;
+  }
+}
